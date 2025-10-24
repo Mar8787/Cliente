@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola mundo</title>
+    <!-- <script type="text/javascript">
+        function saludar() {
+            alert("¡Hola mundo!");
+        }
+    </script> -->
+
+    <script type="text/javascript" src="holamundo.js"></script>
+</head>
+<body>
+    Ejercicio 1:
+    <br>
+    Crear un enlace que al pulsarlo muestre una alerta con el mensaje "¡Hola mundo!".
+    <br>
+    <br>
+    <a onclick="saludar()">PÚLSAME</a>
+    <br>
+    <br>
+    <a onclick="alert('Hola mundo 2');">PÚLSAME 2</a>
+    <br>
+    <br>
+    Ejercicio 2:
+    <br>
+    Crear dos variales 'a' y 'b' donde 'a' valga 10 y 'b' valga 5.
+    Guardar en resultado la suma de 'a' y 'b'
+    Mostrar el valor de resuldado en una alerta.
+
+    <script>
+        let a = 10;
+        let b = 5;
+        let suma = 0;
+        document.writeln("<br> <br>");
+        suma = a + b;
+        document.writeln("El resultado de la suma de " + a + " + " + b + " es: " + suma);
+
+    </script>
+    <br>
+    <br>
+    Ejercicio 3:
+    <br>
+    Declara 2 variables numericas y asignales valores.<br>
+    incrementa a la primera 1 y a la segunda 5.<br>
+    Muestra en una alerta por cada numero su valor inicial y su valor final.
+
+    <script>
+        let n = 2;
+        let m = 1;
+        let n2 = n + 1;
+        let m2 = m + 5;
+
+        alert("Ejercicio 3, n inicial: " + n + ". N final: " + n2 + ". M inicial: " + m + ". M final: " + m2);
+
+    </script>
+    <br>
+    <br>
+    Ejercicio 4:
+    <br>
+    Declara una constante y asignale la palabra Hola <br>
+    Declara una variable y asignale el valor mundo <br>
+    Con document.write mostrar el valor de a, el valor de b y la suma de ambos separados por un espacio
+
+    <script>
+        const x = "Hola";
+        let y = "Mundo";
+
+        document.write(`El valor de x ${x}, el valor de y ${y} y la suma de ambos es: ` + x + " " + y);
+    </script>
+    <br>
+    <br>    
+    <script>
+        const h = [1,2,3,4,5];
+        let j = "Mundo";
+        h[0] = "hola";
+        h = [5,4,3,2,1,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8]; // Esto da error porque las constantes no pueden reasignarse, no puedo cambiar el tamaño del array
+
+        document.write(`El valor de h ${h}, el valor de j ${j} y la suma de ambos es: ` + x + " " + y);
+    </script>
+    <br>
+    <br>
+    Ejercicio 5:
+    <br>
+    Introducir datos por teclado y mostrarlos por pantalla
+    <br>
+    <br>
+    <script>
+        let dato, resultado;
+        dato = window.prompt("Introduce tu nombre:", "Escribe tu nombre aquí");
+        resultado = `Hola, ¿cómo estás ${dato}?`;
+
+        document.write(resultado);
+    </script>
+
+
+</body>
+</html>
